@@ -54,7 +54,7 @@ while (true) {
     // 게임 종료 플래그
     var gameEndFlag = false;
 
-    while (true) {
+    while (true) { 
         // 사용자 입력답
         var answer = +prompt(`숫자를 입력하세요! [${minValue} ~ ${maxValue}]`);
 
