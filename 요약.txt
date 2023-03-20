@@ -33,6 +33,7 @@ var 변수명1 = 조건식 ? true일때 반환값 : false일때 반환값;
 공식:  x이상 y이하의 정수 난수
 Math.floor(Math.random() * (y - x + 1)) + x
 
+
 while 공식
 var n = 1; // 제어변수 (초기값: begin)
 while (n <= 100) { // 조건식 (끝값: end)
