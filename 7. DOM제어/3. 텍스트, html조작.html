@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #greet span {
+            color: red;
+        }
+
+        #greet::before {
+            content: "what's up!";
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="greet">
+        hello <span> World!</span>
+    </div>
+
+    <script>
+
+        const $greet = document.getElementById('.greet');
+        console.log($greet.textContent);
+
+        //textContent의 단점은 텍스트 태그 안에 span이 있는 경우
+        // span이 없어진다
+        $greet.textContent = '안녕하세요!';
+
+        $greet.innerHTML = '<span>안녕</span>하세요!';
+
+
+        //모든 자식 태그르 삭제 
+        #greet.innerHTML = '';
+
+        // 자식 태그를 추가 할수도 있음 
+        $greet.innerHTML += '<span>메롱메롱</span>'
+
+    </script>
+
+</body>
+
+</html>

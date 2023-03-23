@@ -30,10 +30,24 @@ const userList = [{
 
 
 
- userList.forEach(function(user) => {
-    console.log(`${user.address}, ${idx}, ${user}`);
+     userList.forEach((user, idx) => {
+    console.log(`${user.address}, ${idx}, ${user}, ${typeof user}`);
    });
 
 
 
-  
+const arr = [1,2,3,4,5,6];
+
+arr.forEach((numbers, idx) => console.log(numbers));
+
+const object = {
+    account: 'fire',
+    userName: '불꽃남자카리스마',
+    job: '게이머',
+    address: '서울',
+    hobbys: ['독서', '테니스']
+};
+
+console.log(`${object} ${typeof object}`);
+
+console.log(userlist);
